@@ -1030,13 +1030,12 @@ textarea {
 
 .footer-logo {
   margin: 0 auto;
-  margin-bottom: 72px;
+  margin-bottom: var(--gap72);
   width: 268px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-logo {
-    /* margin-right: var(--gap24); */
     justify-content: flex-start;
     width: 264px;
     margin: 0;
@@ -1046,7 +1045,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer-logo {
     margin-right: 120px;
-    width: 264px;
   }
 }
 
@@ -1153,27 +1151,12 @@ textarea {
 
 /* ------------- */
 
-@media screen and (min-width: 768px) {
-  .footer-form {
-  }
-}
-
 .subscribe-form {
   margin-top: var(--gap16);
   margin: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .subscribe-form {
-    /* margin-top: var(--gap16); */
-    display: flex;
-    justify-content: flex-start;
-    margin: 0;
-    gap: var(--gap24);
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .subscribe-form {
     display: flex;
     margin: 0;
