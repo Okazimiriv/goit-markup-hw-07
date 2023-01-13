@@ -223,6 +223,9 @@ body {
 
   font-family: inherit;
   letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--basik-light-color);
   background-color: var(--accent-color);
 
@@ -242,9 +245,6 @@ body {
 .button-hero {
   padding: 16px 32px;
   display: inline-block;
-
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .overlay {
@@ -306,10 +306,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
   padding-top: 72px;
-  width: 408px;
-  min-height: 576px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 392px;
+  min-height: 586px;
 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -317,6 +319,21 @@ body {
   border-radius: 4px;
 
   transition: opacity var(--anim-function), transform var(--anim-function) 100ms;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-modal {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 408px;
+    min-height: 586px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-modal {
+    min-height: 584px;
+  }
 }
 
 .modal-btn {
@@ -1202,10 +1219,6 @@ textarea {
   padding: 8px 24px;
   margin: 0 auto;
   margin-top: var(--gap16);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
