@@ -478,12 +478,6 @@ textarea {
   gap: 5px;
 }
 
-@media screen and (max-width: 373px) {
-  .form-check {
-    flex-wrap: wrap;
-  }
-}
-
 .checkbox {
   appearance: none;
   position: absolute;
