@@ -242,7 +242,7 @@ body {
   background-color: var(--accent-hover);
 }
 
-.button-hero {
+.hero-btn {
   padding: 16px 32px;
   display: inline-block;
 }
@@ -286,6 +286,7 @@ body {
 
   background-color: rgba(46, 47, 66, 0.4);
   backdrop-filter: blur(1px);
+  overflow-y: scroll;
 
   transition: visibility var(--anim-function), opacity var(--anim-function);
 }
@@ -302,15 +303,14 @@ body {
 }
 
 .hero-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 96px auto 0;
+
   padding-top: 72px;
   padding-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
-  width: 392px;
+  max-width: 392px;
   min-height: 586px;
 
   background: #fcfcfc;
@@ -332,7 +332,11 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero-modal {
-    min-height: 584px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
   }
 }
 
@@ -366,7 +370,7 @@ body {
 .form-tittle {
   display: block;
   text-align: center;
-  margin-bottom: var(--gap16);
+  margin-bottom: 16px;
 
   font-weight: 500;
   font-size: 16px;
@@ -469,8 +473,15 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   user-select: none;
   gap: 5px;
+}
+
+@media screen and (max-width: 373px) {
+  .form-check {
+    flex-wrap: wrap;
+  }
 }
 
 .checkbox {
@@ -503,9 +514,7 @@ textarea {
 
 .hero-form-btn {
   display: block;
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 24px auto 0;
   padding: 16px 32px;
   width: 169px;
 }
