@@ -24,25 +24,10 @@
   <body>
     <header class="header-border">
       <div class="container mein-nav">
-        <nav class="heder container">
-          <a href="./index.html" class="logo decore-link"
-            ><p><span class="logo-blu">WEB</span>STUDIO</p></a
-          >
-          <button
-            class="menu-burger js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="32" height="22" fill="currentColor" viewBox="0 0 20 20">
-              <use href="./images/icons.svg#menu-hamburger"></use>
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-
+        <a href="./index.html" class="logo decore-link"
+          ><p><span class="logo-blu">WEB</span>STUDIO</p></a
+        >
+        <nav class="heder">
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link decore-link current effect">Studio</a>
@@ -54,14 +39,27 @@
           </ul>
         </nav>
 
-        <ul class="site-adress list container">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link decore-link">info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a href="tel:+110001111111" class="link decore-link">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
+        <div>
+          <ul class="site-adress list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link decore-link">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+110001111111" class="link decore-link">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="menu-burger js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="32" height="22" fill="currentColor" viewBox="0 0 20 20">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
 
