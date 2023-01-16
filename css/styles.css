@@ -740,6 +740,12 @@ textarea {
 
 /* _____works_____ */
 
+@media screen and (max-width: 1199px) {
+  .works {
+    display: none;
+  }
+}
+
 .items {
   display: flex;
   flex-wrap: wrap;
@@ -768,16 +774,59 @@ textarea {
   display: block;
 }
 
+/* _____team_____ */
+
+.team.section {
+  padding-bottom: 128px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .team.section {
+    padding-bottom: 104px;
+  }
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
   margin: 0;
-  gap: var(--gap24);
+  gap: 72px;
 }
 
-.card-item {
-  flex-basis: calc((100% - 3 * var(--gap24)) / 4);
+@media screen and (min-width: 768px) {
+  .card {
+    row-gap: 64px;
+    column-gap: var(--gap24);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    gap: var(--gap24);
+  }
+}
+
+.list.card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .card-item {
+    flex-basis: calc((100% - 1 * var(--gap24)) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-item {
+    flex-basis: calc((100% - 3 * var(--gap24)) / 4);
+  }
 }
 
 .team {
@@ -786,7 +835,7 @@ textarea {
 
 .team-content {
   background-color: var(--basik-light-color);
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.25); */
+
   padding: 32px 16px;
   text-align: center;
 
