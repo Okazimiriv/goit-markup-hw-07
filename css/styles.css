@@ -387,7 +387,7 @@ body {
 
 .hero-modal {
   position: relative;
-  margin: 96px 18px 0;
+  margin: 96px auto 0;
 
   padding-top: 72px;
   padding-bottom: 24px;
@@ -402,6 +402,13 @@ body {
   border-radius: 4px;
 
   transition: opacity var(--anim-function), transform var(--anim-function) 100ms;
+}
+
+@media screen and (max-width: 429px) {
+  .hero-modal {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
 }
 
 @media screen and (min-width: 768px) {
